@@ -17,8 +17,8 @@ const SlideList = [
     category: "Welcome to my World",
     description: "",
     buttonText: "",
-    buttonLink: ""
-  }
+    buttonLink: "",
+  },
 ];
 const PortfolioLanding = () => {
   let title = "About Me",
@@ -50,7 +50,8 @@ const PortfolioLanding = () => {
                           <span> JS Developer.</span>
                           <span> UI/UX Designer.</span>
                           <span> SQL Developer.</span>
-                          <span> SSRS/SSIS Report Designer</span>
+                          <span> SSRS/SSIS Report Designer.</span>
+                          <span> Python Developer.</span>
                         </TextLoop>{" "}
                       </h1>
                       <h2>based in California.</h2>
@@ -92,7 +93,7 @@ const PortfolioLanding = () => {
                   <div className="thumbnail">
                     <img
                       className="w-100"
-                      src="/assets/images/about/about-8.jpg"
+                      src="/assets/images/about/Casual-Profile-Pic.jpeg"
                       alt="About Images"
                     />
                   </div>
