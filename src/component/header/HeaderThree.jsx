@@ -8,7 +8,7 @@ import {
 import { FiX, FiMenu } from "react-icons/fi";
 import Scrollspy from "react-scrollspy";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { laptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/lanigiroton" },
@@ -16,7 +16,10 @@ const SocialShare = [
     Social: <FaLinkedinIn />,
     link: "https://www.linkedin.com/in/christopher-cruz-5b7979186/",
   },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
+  {
+    Social: <FaInstagram />,
+    link: "https://www.instagram.com/chrisisamagician/",
+  },
   { Social: <FaTwitter />, link: "https://twitter.com/ChrisCruzes" },
 ];
 class HeaderThree extends Component {
