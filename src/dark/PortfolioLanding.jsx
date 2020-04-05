@@ -17,13 +17,12 @@ const SlideList = [
     category: "Welcome to my World",
     description: "",
     buttonText: "",
-    buttonLink: ""
-  }
+    buttonLink: "",
+  },
 ];
 const PortfolioLanding = () => {
   let title = "About Me",
-    description =
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered <a href="#">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,';
+    description = `Hi, my name is Chris and I currently work as the Inventory Control Manager for a gas station franchise company based in California. In addition to my primary responsibilities, I function as the company's data analyst by using my SQL & SSRS skills to create reports for the officers and department managers. I live with my fiancé, my brother, and our pet cat and snake in Southern California. My fiancé and I are looking to move to Portland, Oregon in 2021. In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. After 2 years of self teaching, and college courses in Python and Javascript, I finally decided to enroll in Lamda School's full stack web development course in March of 2019. I am set to complete the course in August of 2020. `;
   const PostList = BlogContent.slice(0, 3);
   return (
     <div className="active-dark">
@@ -48,9 +47,9 @@ const PortfolioLanding = () => {
                         Hi, I’m Chris Cruz <br />
                         <TextLoop>
                           <span> JS Developer.</span>
-                          <span> UI/UX Designer.</span>
                           <span> SQL Developer.</span>
-                          <span> SSRS/SSIS Report Designer</span>
+                          <span> SSRS/SSIS Report Designer.</span>
+                          <span> Python Developer.</span>
                         </TextLoop>{" "}
                       </h1>
                       <h2>based in California.</h2>
@@ -92,7 +91,7 @@ const PortfolioLanding = () => {
                   <div className="thumbnail">
                     <img
                       className="w-100"
-                      src="/assets/images/about/about-8.jpg"
+                      src="/assets/images/about/Casual-Profile-Pic.jpeg"
                       alt="About Images"
                     />
                   </div>
@@ -117,7 +116,7 @@ const PortfolioLanding = () => {
       {/* End About Area */}
 
       {/* Start Service Area  */}
-      <div id="service" className="fix">
+      {/* <div id="service" className="fix">
         <div className="service-area creative-service-wrapper ptb--120 bg_color--5">
           <div className="container">
             <div className="row">
@@ -141,7 +140,7 @@ const PortfolioLanding = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End Service Area  */}
 
       {/* Start Portfolio Area */}
@@ -183,7 +182,7 @@ const PortfolioLanding = () => {
       {/* End Portfolio Area */}
 
       {/* Start Blog Area */}
-      <div id="blog" className="fix">
+      {/* <div id="blog" className="fix">
         <div className="rn-blog-area ptb--120 bg_color--5 mb-dec--30">
           <div className="container">
             <div className="row align-items-end">
@@ -228,7 +227,7 @@ const PortfolioLanding = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End Blog Area */}
 
       {/* Start COntact Area */}
