@@ -151,7 +151,7 @@ class Root extends Component {
               /> */}
 
           {/* Element Layot */}
-          <Route
+          {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/service`}
             component={Service}
@@ -185,10 +185,10 @@ class Root extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/blog-details`}
             component={BlogDetails}
-          />
+          /> */}
 
           {/* Blocks Elements  */}
-          <Route
+          {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/team`}
             component={Team}
@@ -242,7 +242,7 @@ class Root extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/columns`}
             component={Columns}
-          />
+          /> */}
 
           <Route path={`${process.env.PUBLIC_URL}/404`} component={error404} />
           <Route component={error404} />
