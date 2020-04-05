@@ -7,6 +7,8 @@ import {
 } from "react-icons/fa";
 import { FiX, FiMenu } from "react-icons/fi";
 import Scrollspy from "react-scrollspy";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/lanigiroton" },
@@ -61,32 +63,7 @@ class HeaderThree extends Component {
       }
     }
     const { logo, color = "default-color" } = this.props;
-    let logoUrl;
-    if (logo === "light") {
-      logoUrl = (
-        <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />
-      );
-    } else if (logo === "dark") {
-      logoUrl = (
-        <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />
-      );
-    } else if (logo === "symbol-dark") {
-      logoUrl = (
-        <img
-          src="/assets/images/logo/logo-symbol-dark.png"
-          alt="Digital Agency"
-        />
-      );
-    } else if (logo === "symbol-light") {
-      logoUrl = (
-        <img
-          src="/assets/images/logo/logo-symbol-light.png"
-          alt="Digital Agency"
-        />
-      );
-    } else {
-      logoUrl = <img src="/assets/images/logo/logo.png" alt="Digital Agency" />;
-    }
+    let logoUrl = <FontAwesomeIcon icon={"laptop-code"} />;
 
     return (
       <header className={`header-area header-style-two header--fixed ${color}`}>
