@@ -86,9 +86,9 @@ class HeaderThree extends Component {
                 items={[
                   "home",
                   "about",
-                  "service",
+                  //   "service",
                   "portfolio",
-                  "blog",
+                  //   "blog",
                   "contact",
                 ]}
                 currentClassName="is-current"
@@ -100,7 +100,9 @@ class HeaderThree extends Component {
                 <li>
                   <a href="#about">About</a>
                 </li>
-                {/* <li><a href="#service">Service</a></li> */}
+                {/* <li>
+                  <a href="#service">Service</a>
+                </li> */}
                 <li>
                   <a href="#portfolio">Portfolio</a>
                 </li>
