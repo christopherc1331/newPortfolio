@@ -151,7 +151,7 @@ const PortfolioLanding = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                    <h2 className="title">My Latest Project</h2>
+                    <h2 className="title">My Latest Projects</h2>
                     <p>
                       Below are just a few of the many recent projects that I've
                       been working on.
@@ -169,9 +169,9 @@ const PortfolioLanding = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                    <a className="rn-button-style--2 btn-solid" href="/blog">
+                    {/* <a className="rn-button-style--2 btn-solid" href="/blog">
                       <span>View More</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
