@@ -8,7 +8,7 @@ import {
 import { FiX, FiMenu } from "react-icons/fi";
 import Scrollspy from "react-scrollspy";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { laptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/lanigiroton" },
@@ -66,7 +66,12 @@ class HeaderThree extends Component {
       }
     }
     const { logo, color = "default-color" } = this.props;
-    let logoUrl = <FontAwesomeIcon icon={"laptop-code"} />;
+    let logoUrl = (
+      <FontAwesomeIcon
+        style={{ color: "#fff", fontSize: "1.5rem" }}
+        icon={faLaptopCode}
+      />
+    );
 
     return (
       <header className={`header-area header-style-two header--fixed ${color}`}>
