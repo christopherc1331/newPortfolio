@@ -22,7 +22,7 @@ const SlideList = [
 ];
 const PortfolioLanding = () => {
   let title = "About Me",
-    description = `Hi, my name is Chris and I currently work as the Inventory Control Manager for a gas station franchise company based in California. In addition to my primary responsibilities, I function as the company's data analyst by using my SQL & SSRS skills to create reports for the officers and department managers. I live with my fiancé, my brother, and our pet cat and snake in Southern California. My fiancé and I are looking to move to Portland, Oregon in 2021. In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. After 2 years of self teaching, and college courses in Python and Javascript, I finally decided to enroll in Lamda School's full stack web development course in March of 2019. I am set to complete the course in August of 2020. `;
+    description = `Hi, my name is Chris and I currently work as the Inventory Control Manager for a gas station franchise company based in California. In addition to my primary responsibilities, I function as the company's data analyst by using my SQL & SSRS skills to create reports for the officers and department managers. I live with my fiancé, my brother, pet cat, and pet snake in Southern California. My fiancé and I are looking to move to Portland, Oregon in 2021. In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. After 2 years of self teaching, and college courses in Python and Javascript, I finally decided to enroll in Lamda School's full stack web development course in March of 2019. I am set to complete the course in August of 2020. `;
   const PostList = BlogContent.slice(0, 3);
   return (
     <div className="active-dark">
@@ -151,10 +151,10 @@ const PortfolioLanding = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                    <h2 className="title">My Latest Project</h2>
+                    <h2 className="title">My Latest Projects</h2>
                     <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration.
+                      Below are just a few of the many recent projects that I've
+                      been working on.
                     </p>
                   </div>
                 </div>
@@ -169,9 +169,9 @@ const PortfolioLanding = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                    <a className="rn-button-style--2 btn-solid" href="/blog">
+                    {/* <a className="rn-button-style--2 btn-solid" href="/blog">
                       <span>View More</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
