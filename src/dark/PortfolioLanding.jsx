@@ -234,7 +234,7 @@ const PortfolioLanding = () => {
       <div id="contact" className="fix">
         <div className="rn-contact-area ptb--120 bg_color--1">
           <ContactThree
-            contactImages="/assets/images/about/personal-portrait.jpg"
+            contactImages="/assets/images/about/personal-portrait.JPG"
             contactTitle="Hire Me."
           />
         </div>
