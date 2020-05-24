@@ -22,7 +22,7 @@ const SlideList = [
 ];
 const PortfolioLanding = () => {
   let title = "About Me",
-    description = `Hi, my name is Chris and I currently work as the Inventory Control Manager for a gas station franchise company based in California. In addition to my primary responsibilities, I function as the company's data analyst by using my SQL & SSRS skills to create reports for the officers and department managers. I live with my fiancé, my brother, pet cat, and pet snake in Southern California. My fiancé and I are looking to move to Portland, Oregon in 2021. In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. After 2 years of self teaching, and college courses in Python and Javascript, I finally decided to enroll in Lamda School's full stack web development course in March of 2019. I am set to complete the course in August of 2020. `;
+    description = `Hi, my name is Chris and I currently work as an Inventory Control Manager in California. In addition to my primary responsibilities, I second as the company's data analyst by using my SQL & SSRS skills to create reports for the officers and department managers.  In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. My beginning in my programming journey began in my parent's garage, where I used to live; I used to take courses online and at Fullerton college. After 2 years of self teaching, and college courses in Python and Javascript, I decided to enroll in Lamda School's full stack web development course in March of 2019. I am set to complete the course in August of 2020.`;
   const PostList = BlogContent.slice(0, 3);
   return (
     <div className="active-dark">
