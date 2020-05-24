@@ -4,8 +4,8 @@ const PortfolioListContent = [
   {
     image: "image-1",
     category: "Development",
-    title: "Getting tickets to the big show",
-    link: "https://saltiesthackers.herokuapp.com/",
+    title: "Synaps",
+    link: "http://www.synapsapp.com/",
   }, //,
   // {
   //     image: 'image-2',
