@@ -97,14 +97,12 @@ class PortfolioList extends Component {
                 </div>
               </div>
             </div>
-            <div style={{ marginTop: "10px", display: "flex" }}>
+            <div style={{ marginTop: "15px", display: "flex" }}>
               <a
                 style={{ cursor: "pointer" }}
                 onClick={() => window.open(value.link, "_blank")}
               >
-                <h3 style={{ marginRight: "7px", marginTop: "10px" }}>
-                  Front End Site{" "}
-                </h3>
+                <h3 style={{ marginRight: "7px" }}>Front End Site </h3>
               </a>
               <h4>|</h4>
               <a
@@ -116,9 +114,7 @@ class PortfolioList extends Component {
                   )
                 }
               >
-                <h3 style={{ marginLeft: "7px", marginTop: "10px" }}>
-                  Front End Repo
-                </h3>
+                <h3 style={{ marginLeft: "7px" }}>Front End Repo</h3>
               </a>
             </div>
             <div style={{ display: "flex" }}>
@@ -131,9 +127,7 @@ class PortfolioList extends Component {
                   )
                 }
               >
-                <h3 style={{ marginRight: "7px", marginTop: "10px" }}>
-                  Back End Site{" "}
-                </h3>
+                <h3 style={{ marginRight: "7px" }}>Back End Site </h3>
               </a>
               <h4>|</h4>
               <a
@@ -145,9 +139,7 @@ class PortfolioList extends Component {
                   )
                 }
               >
-                <h3 style={{ marginLeft: "7px", marginTop: "10px" }}>
-                  Back End Repo
-                </h3>
+                <h3 style={{ marginLeft: "7px" }}>Back End Repo</h3>
               </a>
             </div>
             <p style={{ color: "rgba(198,201,216,0.75)" }}>
