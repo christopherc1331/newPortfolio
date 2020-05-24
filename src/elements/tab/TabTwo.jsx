@@ -44,7 +44,7 @@ class TabsTwo extends Component {
                             SQL Queries and Stored Procedures{" "}
                             <span> - Development</span>
                           </a>
-                          "The fax machine of the web" - Anonymous.
+                          Providing advanced data analytics.
                         </li>
                         <li>
                           <a>
@@ -118,6 +118,14 @@ class TabsTwo extends Component {
                             <span> - Lambda School</span>
                           </a>{" "}
                           2019 - 2020
+                        </li>
+                        <li>
+                          <a style={{ visibility: "hidden" }}> f</a>{" "}
+                          <a style={{ visibility: "hidden" }}>f </a>{" "}
+                        </li>
+                        <li>
+                          <a style={{ visibility: "hidden" }}> f</a>{" "}
+                          <a style={{ visibility: "hidden" }}> f</a>{" "}
                         </li>
                         {/* <li>
                           <a>
