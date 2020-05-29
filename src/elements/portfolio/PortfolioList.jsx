@@ -17,11 +17,16 @@ const PortfolioListContent = [
                   created they can take a quiz with all their flashcards
                   .`,
   }, //,
-  // {
-  //     image: 'image-2',
-  //     category: 'Development',
-  //     title: 'Getting tickets to the big show'
-  // },
+  {
+    image: "image-2",
+    category: "Development",
+    title: "TaxFiling",
+    description: `I recently programmed an SQL query to provide H&S Energy's
+                    accounting team with the company's total taxes
+                    due.  I used SSRS to style the data after it was queried.
+                    The above picture is an actual snippet of the final select
+                    statement in my query.`,
+  }, //,
   // {
   //     image: 'image-3',
   //     category: 'Development',
@@ -76,7 +81,9 @@ class PortfolioList extends Component {
           <div className={`${column}`} key={index} style={{ display: "row" }}>
             <div
               className={`portfolio ${styevariation}`}
-              onClick={() => window.open(value.link, "_blank")}
+              onClick={() =>
+                value.title !== "TaxFiling" && window.open(value.link, "_blank")
+              }
             >
               <div className="thumbnail-inner">
                 <div className={`thumbnail ${value.image}`}></div>
@@ -84,62 +91,75 @@ class PortfolioList extends Component {
               </div>
               <div className="content">
                 <div className="inner">
-                  <div className="portfolio-button">
-                    <a className="rn-btn">View Project</a>
-                  </div>
+                  {value.title !== "TaxFiling" && (
+                    <div className="portfolio-button">
+                      <a className="rn-btn">View Project</a>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
-            <div style={{ marginTop: "25px", display: "flex" }}>
-              <a
-                style={{ cursor: "pointer" }}
-                onClick={() => window.open(value.link, "_blank")}
-              >
-                <h3 style={{ marginRight: "7px" }}>Front End Site </h3>
-              </a>
-              <h4>|</h4>
-              <a
-                style={{ cursor: "pointer" }}
-                onClick={() =>
-                  window.open(
-                    "https://github.com/SynapsFlashCards/SynapsFrontend",
-                    "_blank"
-                  )
-                }
-              >
-                <h3 style={{ marginLeft: "7px", color: "#f9004d" }}>
-                  Front End Repo
-                </h3>
-              </a>
-            </div>
-            <div style={{ display: "flex" }}>
-              <a
-                style={{ cursor: "pointer" }}
-                onClick={() =>
-                  window.open(
-                    "https://staging-lambda-synaps-be.herokuapp.com/",
-                    "_blank"
-                  )
-                }
-              >
-                <h3 style={{ marginRight: "7px" }}>Back End Docs </h3>
-              </a>
-              <h4>|</h4>
-              <a
-                style={{ cursor: "pointer" }}
-                onClick={() =>
-                  window.open(
-                    "https://github.com/SynapsFlashCards/SynapsBackend",
-                    "_blank"
-                  )
-                }
-              >
-                <h3 style={{ marginLeft: "7px", color: "#f9004d" }}>
-                  Back End Repo
-                </h3>
-              </a>
-            </div>
-            <p style={{ color: "rgba(198,201,216,0.75)" }}>
+            {value.title !== "TaxFiling" && (
+              <div style={{ marginTop: "25px", display: "flex" }}>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={() => window.open(value.link, "_blank")}
+                >
+                  <h3 style={{ marginRight: "7px" }}>Front End Site </h3>
+                </a>
+                <h4>|</h4>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/SynapsFlashCards/SynapsFrontend",
+                      "_blank"
+                    )
+                  }
+                >
+                  <h3 style={{ marginLeft: "7px", color: "#f9004d" }}>
+                    Front End Repo
+                  </h3>
+                </a>
+              </div>
+            )}
+
+            {value.title !== "TaxFiling" && (
+              <div style={{ display: "flex" }}>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={() =>
+                    window.open(
+                      "https://staging-lambda-synaps-be.herokuapp.com/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <h3 style={{ marginRight: "7px" }}>Back End Docs </h3>
+                </a>
+                <h4>|</h4>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/SynapsFlashCards/SynapsBackend",
+                      "_blank"
+                    )
+                  }
+                >
+                  <h3 style={{ marginLeft: "7px", color: "#f9004d" }}>
+                    Back End Repo
+                  </h3>
+                </a>
+              </div>
+            )}
+
+            <p
+              style={{
+                color: "rgba(198,201,216,0.75)",
+                marginTop: value.title === "TaxFiling" ? "25px" : "0px",
+              }}
+            >
               {value.description}
             </p>
           </div>
