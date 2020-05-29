@@ -7,7 +7,7 @@ const PortfolioListContent = [
     category: "Development",
     title: "Synaps",
     link: "http://www.synapsapp.com/",
-    description: `This project is the result of a 3 months of work.
+    description: `This project is the result of 3 months of work.
                   I was paired with a cross functional team of Full Stack 
                   Engineers and UX Designers.  I personally worked on a 
                   majority of the back end API and documentation 
