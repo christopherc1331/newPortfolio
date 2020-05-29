@@ -9,20 +9,13 @@ const PortfolioListContent = [
     link: "http://www.synapsapp.com/",
     description: `This project is the result of 3 months of work.
                   I was paired with a cross functional team of Full Stack 
-                  Engineers and UX Designers.  I personally worked on a 
-                  majority of the back end API and documentation 
-                  (we built some impressive documentation via the API Docs
-                  library; this library allowed for actual calls to be
-                  made to the database so that you can see what a response
-                  looks like for each endpoint) by using Node.JS and Express
-                  to build the RESTFUL API endpoints. Once I finished the
-                  back end I joined my team on the front end where we used
-                  React/Redux and Ant Design to implement components and
-                  views that were designed by our UX team.  Our project is
-                  a flashcard app designed for life science students.  It
-                  allows the user to create a profile, create a deck, and
+                  Engineers and UX Designers.  One of the things I'm most
+                  proud of in this project is our backend API documentation.
+                  Synaps is a flashcard app designed for life science students.
+                  It allows the user to create a profile, create a deck, and
                   create cards for each deck.  Once their cards have been
-                  created they can take a quiz with all their flashcards.`,
+                  created they can take a quiz with all their flashcards
+                  .`,
   }, //,
   // {
   //     image: 'image-2',
@@ -97,7 +90,7 @@ class PortfolioList extends Component {
                 </div>
               </div>
             </div>
-            <div style={{ marginTop: "15px", display: "flex" }}>
+            <div style={{ marginTop: "25px", display: "flex" }}>
               <a
                 style={{ cursor: "pointer" }}
                 onClick={() => window.open(value.link, "_blank")}
@@ -114,7 +107,9 @@ class PortfolioList extends Component {
                   )
                 }
               >
-                <h3 style={{ marginLeft: "7px" }}>Front End Repo</h3>
+                <h3 style={{ marginLeft: "7px", color: "#f9004d" }}>
+                  Front End Repo
+                </h3>
               </a>
             </div>
             <div style={{ display: "flex" }}>
@@ -127,7 +122,7 @@ class PortfolioList extends Component {
                   )
                 }
               >
-                <h3 style={{ marginRight: "7px" }}>Back End Site </h3>
+                <h3 style={{ marginRight: "7px" }}>Back End Docs </h3>
               </a>
               <h4>|</h4>
               <a
@@ -139,7 +134,9 @@ class PortfolioList extends Component {
                   )
                 }
               >
-                <h3 style={{ marginLeft: "7px" }}>Back End Repo</h3>
+                <h3 style={{ marginLeft: "7px", color: "#f9004d" }}>
+                  Back End Repo
+                </h3>
               </a>
             </div>
             <p style={{ color: "rgba(198,201,216,0.75)" }}>
