@@ -22,7 +22,7 @@ const SlideList = [
 ];
 const PortfolioLanding = () => {
   let title = "About Me",
-    description = `Hi, my name is Chris and I currently work as an Inventory Control Manager in California. In addition to my primary responsibilities, I second as the company's data analyst by using my SQL & SSRS skills to create reports for the officers and department managers.  In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. My beginning in my programming journey began in my parent's garage, where I used to live; I used to take courses online and at Fullerton college. After 2 years of self teaching, and college courses in Python and Javascript, I decided to enroll in Lamda School's full stack web development course in March of 2019. I am set to complete the course in August of 2020.`;
+    description = `Hi, my name is Chris and I currently work as a Data Analyst in California, where I use my SQL & SSRS skills to create reports for the officers and department managers in my company.  In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. My programming journey began in my parent's garage in 2017 when I started taking Python/Javascript programming courses online and at my local community colleges. After 2 years of self teaching and college courses, I decided to enroll in Lamda School's full stack web development course in March of 2019. I am set to complete the course in August of 2020.`;
   const PostList = BlogContent.slice(0, 3);
   return (
     <div className="active-dark">
@@ -163,7 +163,7 @@ const PortfolioLanding = () => {
                 <PortfolioList
                   styevariation="text-center mt--40"
                   column="col-lg-4 col-md-6 col-sm-6 col-12"
-                  item="6"
+                  item="3"
                 />
               </div>
               <div className="row">
