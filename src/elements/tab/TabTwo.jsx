@@ -86,14 +86,14 @@ class TabsTwo extends Component {
                       <ul>
                         <li>
                           <a>
-                            Front End Engineer
-                            <span> - Lambda School Build Week </span>
+                            Full Stack Engineer
+                            <span> - Lambda School Labs (synaps.com) </span>
                           </a>{" "}
                           Jan 2020
                         </li>
                         <li>
                           <a>
-                            Data analyst (Unofficial)
+                            Data analyst
                             <span> - H&S Energy LLC</span>
                           </a>{" "}
                           2019 - Current
@@ -103,7 +103,7 @@ class TabsTwo extends Component {
                             Inventory Control Manager
                             <span> - H&S Energy LLC</span>
                           </a>{" "}
-                          2017 - Current
+                          2017 - 2020
                         </li>
                       </ul>
                     </div>

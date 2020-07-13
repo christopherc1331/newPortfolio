@@ -8,30 +8,35 @@ const PortfolioListContent = [
     title: "Synaps",
     link: "http://www.synapsapp.com/",
     description: `This project is the result of 3 months of work.
-                  I was paired with a cross functional team of Full Stack 
-                  Engineers and UX Designers.  One of the things I'm most
-                  proud of in this project is our backend API documentation.
-                  Synaps is a flashcard app designed for life science students.
-                  It allows the user to create a profile, create a deck, and
-                  create cards for each deck.  Once their cards have been
-                  created they can take a quiz with all their flashcards
-                  .`,
+                    I was paired with a cross functional team of Full Stack 
+                    Engineers and UX Designers.  One of the things I'm most
+                    proud of in this project is our backend API documentation.
+                    Synaps is a flashcard app designed for life science students.
+                    It allows the user to create a profile, create a deck, and
+                    create cards for each deck.  Once their cards have been
+                    created they can take a quiz with all their flashcards
+                    .`,
   }, //,
   {
     image: "image-2",
     category: "Development",
-    title: "TaxFiling",
+    title: "Tax Filing Report",
     description: `I recently programmed an SQL query to provide H&S Energy's
                     accounting team with the company's total taxes
-                    due.  I used SSRS to style the data after it was queried.
+                    due.  I used SSRS to style the report after the data was queried.
                     The above picture is an actual snippet of the final select
                     statement in my query.`,
   }, //,
-  // {
-  //     image: 'image-3',
-  //     category: 'Development',
-  //     title: 'Getting tickets to the big show'
-  // },
+  {
+    image: "image-3",
+    category: "Development",
+    title: `Cellular Automata`,
+    link: "https://conwaysgolcellularautomata.herokuapp.com/",
+    description: `This project was built using React and incorporated computer
+                    science recursion techniques to display Conway's Rules of Life
+                    in real time. Styled components was utilized for the styling of
+                    the cells.`,
+  },
   // {
   //     image: 'image-4',
   //     category: 'Development',
@@ -79,10 +84,12 @@ class PortfolioList extends Component {
       <React.Fragment>
         {list.map((value, index) => (
           <div className={`${column}`} key={index} style={{ display: "row" }}>
+            <h3 style={{ color: "#fff" }}>{value.title}</h3>
             <div
               className={`portfolio ${styevariation}`}
               onClick={() =>
-                value.title !== "TaxFiling" && window.open(value.link, "_blank")
+                value.title !== "Tax Filing Report" &&
+                window.open(value.link, "_blank")
               }
             >
               <div className="thumbnail-inner">
@@ -91,7 +98,7 @@ class PortfolioList extends Component {
               </div>
               <div className="content">
                 <div className="inner">
-                  {value.title !== "TaxFiling" && (
+                  {value.title !== "Tax Filing Report" && (
                     <div className="portfolio-button">
                       <a className="rn-btn">View Project</a>
                     </div>
@@ -99,7 +106,7 @@ class PortfolioList extends Component {
                 </div>
               </div>
             </div>
-            {value.title !== "TaxFiling" && (
+            {value.title == "Synaps" && (
               <div style={{ marginTop: "25px", display: "flex" }}>
                 <a
                   style={{ cursor: "pointer" }}
@@ -124,7 +131,7 @@ class PortfolioList extends Component {
               </div>
             )}
 
-            {value.title !== "TaxFiling" && (
+            {value.title == "Synaps" && (
               <div style={{ display: "flex" }}>
                 <a
                   style={{ cursor: "pointer" }}
@@ -153,11 +160,26 @@ class PortfolioList extends Component {
                 </a>
               </div>
             )}
+            {value.title == "Cellular Automata" && (
+              <div style={{ marginTop: "25px", display: "flex" }}>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/christopherc1331/CellularAutomata",
+                      "_blank"
+                    )
+                  }
+                >
+                  <h3 style={{ marginRight: "7px" }}>Github Repo</h3>
+                </a>
+              </div>
+            )}
 
             <p
               style={{
                 color: "rgba(198,201,216,0.75)",
-                marginTop: value.title === "TaxFiling" ? "25px" : "0px",
+                marginTop: value.title === "Tax Filing Report" ? "25px" : "0px",
               }}
             >
               {value.description}
