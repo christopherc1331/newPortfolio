@@ -11,7 +11,6 @@ import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
-import ReactGA from "react-ga";
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
@@ -19,11 +18,6 @@ const SocialShare = [
   { Social: <FaInstagram />, link: "https://www.instagram.com/" },
   { Social: <FaTwitter />, link: "https://twitter.com/" },
 ];
-
-function initializeReactGA() {
-  ReactGA.initialize("UA-178682531-1");
-  ReactGA.pageview("/homepage");
-}
 
 class PortfolioDetails extends Component {
   constructor() {
@@ -35,10 +29,6 @@ class PortfolioDetails extends Component {
   }
   openModal() {
     this.setState({ isOpen: true });
-  }
-
-  componentDidMount() {
-    initializeReactGA();
   }
 
   render() {

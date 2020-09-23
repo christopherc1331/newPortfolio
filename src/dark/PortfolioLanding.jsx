@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Helmet from "../component/common/Helmet";
@@ -10,6 +10,7 @@ import ContactThree from "../elements/contact/ContactThree";
 import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import BlogContent from "../elements/blog/BlogContent";
+import ReactGA from "react-ga";
 
 const SlideList = [
   {
@@ -21,6 +22,11 @@ const SlideList = [
   },
 ];
 const PortfolioLanding = () => {
+  useEffect(() => {
+    ReactGA.initialize("UA-178682531-1");
+    ReactGA.pageview("/homepage");
+  }, []);
+
   let title = "About Me",
     description = `Hi, my name is Chris and I currently work as a Data Analyst in California, where I use my SQL & SSRS skills to create reports for the officers and department managers in my company.  In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. My programming journey began in my parent's garage in 2017 when I started taking Python/Javascript programming courses online and at my local community colleges. After 2 years of self teaching and college courses, I decided to enroll in Lamda School's full stack web development course in March of 2019. I am set to complete the course in August of 2020.`;
   const PostList = BlogContent.slice(0, 3);
@@ -48,8 +54,8 @@ const PortfolioLanding = () => {
                         <TextLoop>
                           <span> JS Developer.</span>
                           <span> SQL Developer.</span>
-                          <span> SSRS/SSIS Report Designer.</span>
                           <span> Python Developer.</span>
+                          <span> SSRS Designer.</span>
                         </TextLoop>{" "}
                       </h1>
                       <h2>based in California.</h2>
