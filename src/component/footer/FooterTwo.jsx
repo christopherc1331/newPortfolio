@@ -9,10 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/lanigiroton" },
   {
     Social: <FaLinkedinIn />,
-    link: "https://www.linkedin.com/in/christopher-cruz-5b7979186/",
+    link: "https://www.linkedin.com/in/christopherc1331/",
   },
   {
     Social: <FaInstagram />,
