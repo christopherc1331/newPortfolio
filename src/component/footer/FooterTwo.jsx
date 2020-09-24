@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaTwitter,
-  FaInstagram,
-  FaFacebookF,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,6 +7,10 @@ const SocialShare = [
   {
     Social: <FaLinkedinIn />,
     link: "https://www.linkedin.com/in/christopherc1331/",
+  },
+  {
+    Social: <FaGithub />,
+    link: "https://www.github.com/christopherc1331/",
   },
   {
     Social: <FaInstagram />,

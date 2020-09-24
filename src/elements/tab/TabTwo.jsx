@@ -35,22 +35,23 @@ class TabsTwo extends Component {
                         <li>
                           <a>
                             Web and user interface design
-                            <span> - Development</span>
+                            <span> - Front End</span>
                           </a>
-                          Websites, web experiences, ...
+                          Javascript | React | Ant Design | Bootstrap | Styled
+                          Components
+                        </li>
+                        <li>
+                          <a>
+                            RESTful APIs <span> - Back End</span>
+                          </a>
+                          Node JS | Express
                         </li>
                         <li>
                           <a>
                             SQL Queries and Stored Procedures{" "}
-                            <span> - Development</span>
+                            <span> - Database</span>
                           </a>
-                          Providing advanced data analytics.
-                        </li>
-                        <li>
-                          <a>
-                            RESTful APIs <span> - Development</span>
-                          </a>
-                          Endpoints, endpoints everywhere...
+                          MS SQL/SSRS | MYSQL | Postgres
                         </li>
                       </ul>
                     </div>

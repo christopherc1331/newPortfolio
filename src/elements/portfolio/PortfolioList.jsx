@@ -3,8 +3,21 @@ import { Modal, Button } from "antd";
 
 const PortfolioListContent = [
   {
+    image: "image-4",
+    category: "row1",
+    title: "Custom Ipsum",
+    link: "http://www.custom-ipsum.com",
+    description: `Custom Ipsum is a Lorem Ipsum generator with a twist!  You can
+                    generate customized Lorem Ipsum based on the user input. The 
+                    app makes use of the Markov's Chain algorithm to randomly 
+                    generate a pre determined number of paragraphs. The app was
+                    primarily programmed in React JS and styled with Ant Design
+                    and Styled Components.`,
+    github: "https://github.com/christopherc1331/Custom-Ipsum",
+  },
+  {
     image: "image-1",
-    category: "Development",
+    category: "row1",
     title: "Synaps",
     link: "http://www.synapsapp.com/",
     description: `This project is the result of 3 months of work.
@@ -19,7 +32,7 @@ const PortfolioListContent = [
   }, //,
   {
     image: "image-2",
-    category: "Development",
+    category: "row1",
     title: "Tax Filing Report",
     description: `I recently programmed an SQL query to provide H&S Energy's
                     accounting team with the company's total taxes
@@ -29,19 +42,15 @@ const PortfolioListContent = [
   }, //,
   {
     image: "image-3",
-    category: "Development",
+    category: "row2",
     title: `Cellular Automata`,
     link: "https://conwaysgolcellularautomata.herokuapp.com/",
     description: `This project was built using React and incorporated computer
                     science recursion techniques to display Conway's Rules of Life
                     in real time. Styled components was utilized for the styling of
                     the cells.`,
+    github: "https://github.com/christopherc1331/CellularAutomata",
   },
-  // {
-  //     image: 'image-4',
-  //     category: 'Development',
-  //     title: 'Getting tickets to the big show'
-  // },
   // {
   //     image: 'image-3',
   //     category: 'Development',
@@ -83,7 +92,14 @@ class PortfolioList extends Component {
     return (
       <React.Fragment>
         {list.map((value, index) => (
-          <div className={`${column}`} key={index} style={{ display: "row" }}>
+          <div
+            className={`${column}`}
+            key={index}
+            style={{
+              display: "row",
+              marginTop: value.category !== "row1" ? "15px" : "0px",
+            }}
+          >
             <h3 style={{ color: "#fff" }}>{value.title}</h3>
             <div
               className={`portfolio ${styevariation}`}
@@ -160,16 +176,12 @@ class PortfolioList extends Component {
                 </a>
               </div>
             )}
-            {value.title == "Cellular Automata" && (
+            {(value.title == "Cellular Automata" ||
+              value.title == "Custom Ipsum") && (
               <div style={{ marginTop: "25px", display: "flex" }}>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/christopherc1331/CellularAutomata",
-                      "_blank"
-                    )
-                  }
+                  onClick={() => window.open(value.github, "_blank")}
                 >
                   <h3 style={{ marginRight: "7px" }}>Github Repo</h3>
                 </a>
