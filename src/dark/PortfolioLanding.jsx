@@ -28,7 +28,7 @@ const PortfolioLanding = () => {
   }, []);
 
   let title = "About Me",
-    description = `Hi, my name is Chris and I currently work as a Data Analyst in California, where I use my SQL & SSRS skills to create reports for the officers and department managers in my company.  In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. My programming journey began in my parent's garage in 2017 when I started taking Python/Javascript programming courses online and at my local community colleges. After 2 years of self teaching and college courses, I decided to enroll in Lamda School's full stack web development course in March of 2019. I successfully completed the curriculum in August 2020, and am now on a job search for an exciting new role in Software Engineering!`;
+    description = `Hi, my name is Chris and I currently work as a Data Analyst in California, where I use my SQL & SSRS skills to create reports for the officers and department managers in my company.  In my spare time I enjoy powerlifting and learning more about the concepts of Machine Learning. My programming journey began in my parent's garage in 2017 when I started taking Python/Javascript programming courses online and at my local community colleges. After 2 years of self teaching and college courses, I decided to enroll in Lambda School's Full Stack Web Development course in March of 2019. I successfully completed the curriculum in August 2020, and am now on a job search for an exciting new role in Software Engineering!`;
   const PostList = BlogContent.slice(0, 3);
   return (
     <div className="active-dark">
